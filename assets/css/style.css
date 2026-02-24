@@ -1,0 +1,648 @@
+:root{
+    --bg-header: #29292a;
+    --color-header: #fff;
+    --font-family--:"Karla", "Helvetica Neue", helvetica, arial, sans-serif;
+    --icon-wsp: #25D366;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: var(--bg-header);
+    position: fixed;
+    z-index: 100;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("../img/banner.png");
+
+    background-size: cover;        /* responsive */
+    background-position: center;   /* centrado */
+    background-repeat: no-repeat;
+    background-attachment: fixed;  /* efecto estático */
+}
+
+/*menu-bars-open OCULTO POR DEFECTO*/
+.menu-bars-open{
+    display: none;
+}
+
+/*MENU-BARS-CLOSE OCULTO POR DEFECTO*/
+.menu-bars-close{
+    display: none;
+}
+
+/*MENU PARA DISPOSITIVOS MOVILES OCULTO POR DEFECTO*/
+aside{
+    display: none;
+}
+
+
+/*ESTILOS PARA EL CONTENEDOR DEL HEADER*/
+.container_header{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*ESTILOS PARA EL LOGO*/
+.logoGiga img{
+    width: 100px;
+}
+
+/*ESTILOS PARA LINK DE NAVEGACION*/
+.navLink nav ul{
+    gap: 1rem;
+    display: flex;
+    list-style: none;
+}
+
+.navLink nav ul li a{
+    color: var(--color-header);
+    font-family: var(--font-family--);
+}
+
+/*ESTILOS PARA EL ICONO DE WHATSAPP*/
+.link-wsp a{
+    font-size: 20px;
+    color: var(--icon-wsp);
+}
+
+main{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.mensaje-bienvenida h1{
+    color: var(--color-header);
+    font-family: var(--font-family--);
+    margin-bottom: 2rem;
+}
+
+.mensaje-bienvenida{
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+.mensaje-bienvenida button{
+    padding: 0.75rem 1.5rem;
+    font-size: 16px;
+    background-color: #FF6B00;
+    color: #fff;
+    font-weight: 600;
+    font-family: var(--font-family--);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.mensaje-bienvenida button:hover{
+    background-color: #FF5A00;
+}
+
+
+/*SECCION DE PLANES
+.container-planes{
+    width: 100%;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: #fff;
+}
+
+.subtitulo-planes h1{
+    color: #E65100;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.planes{
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.plan{
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.plan:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.plan img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.plan h2{
+    font-family: var(--font-family--);
+    padding: 1rem;
+    color: #333;
+}
+
+.plan p{
+    padding: .5rem 1rem;
+    color: #666;
+}
+
+
+.plan button{
+    margin: 1rem;
+    padding: .5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plan button:hover{
+    background-color: black;
+}
+
+.telefonia{
+    background: #fff;
+    height: 520px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    overflow: hidden; 
+    transition: all 300ms ease;
+}
+
+.telefonia:hover{
+    transform: translateY(-10px);
+}
+
+.telefonia img{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    object-fit: cover;
+    overflow: hidden; 
+}
+
+.telefonia h2{
+    font-family: var(--font-family--);
+    padding: 1rem;
+    color: #333;
+}
+
+.telefonia p{
+    padding: .5rem 1rem;
+    color: #666;
+}
+
+.telefonia button{
+    margin: 1rem;
+    padding: .5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.telefonia button:hover{
+    background-color: black;
+}*//* ============================= */
+/* CONTENEDOR GENERAL */
+/* ============================= */
+
+.container-planes {
+    padding: 100px 8%;
+    background: #0f0f14;
+    font-family: 'Inter', sans-serif;
+}
+
+.subtitulo-planes h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 70px;
+}
+
+/* ============================= */
+/* GRID DE PLANES */
+/* ============================= */
+
+.planes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+/* ============================= */
+/* CARD GENERAL */
+/* ============================= */
+
+.plan {
+    background: #1a1a22;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #222;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    border-color: #ff7a00;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.plan img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ============================= */
+/* CONTENIDO INTERNO */
+/* ============================= */
+
+.plan-body {
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-name {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.plan-speed {
+    color: #aaa;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* ============================= */
+/* PRECIO PROTAGONISTA */
+/* ============================= */
+
+.plan-price {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 25px;
+}
+
+.currency {
+    color: #ff7a00;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.amount {
+    color: #ff7a00;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0 4px;
+}
+
+.period {
+    color: #777;
+    font-size: 14px;
+}
+
+/* ============================= */
+/* BOTÓN */
+/* ============================= */
+
+.btn-plan {
+    margin-top: auto;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #ff7a00;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-plan:hover {
+    background: #ffffff;
+    color: #111;
+}
+
+/* ============================= */
+/* PLAN DESTACADO */
+/* ============================= */
+html {
+    scroll-behavior: smooth;
+}
+
+#tipodeplanes {
+    scroll-margin-top: 80px;
+}
+
+.popular {
+    border: 2px solid #ff7a00;
+    transform: scale(1.05);
+}
+
+.badge {
+    background: #ff7a00;
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+/* ============================= */
+/* CARD TELEFONÍA */
+/* ============================= */
+
+.bg-telefonia {
+    margin-bottom: 100px;
+}
+
+.telefonia-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.telefonia-card img {
+    width: 50%;
+    height: 100%;
+}
+
+.telefonia-card .plan-body {
+    width: 50%;
+}
+
+.promo-text {
+    color: #ff7a00;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 992px) {
+
+    .telefonia-card {
+        flex-direction: column;
+    }
+
+    .telefonia-card img,
+    .telefonia-card .plan-body {
+        width: 100%;
+    }
+
+    aside{
+        display: block;
+        margin-top: 80px;
+        position: fixed;
+        transform: translateY(-100%);
+        background: var(--bg-header);
+        width: 100%;
+        height: calc(100vh - 80px);
+        z-index: 99;
+        transition: transform 0.4s ease; /* 🔥 animación suave */
+    }
+
+    aside.active{
+        transform: translateY(0);
+    }
+
+    .navLink-mobile nav ul li a{
+        display: block;
+        width: 100%;
+        padding: 20px 20px;  /* espacio interno */
+        color: var(--color-header);
+    }
+
+    .navLink-mobile nav ul li:hover{
+        background: #777;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container-planes {
+        padding: 70px 5%;
+    }
+
+    .subtitulo-planes h1 {
+        font-size: 24px;
+    }
+
+    .amount {
+        font-size: 34px;
+    }
+
+    .popular {
+        transform: none;
+    }
+}
+
+/*Estilos del segundo contenedor del main*/
+.container-dos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #353535;
+}
+
+.descripcion {
+    width: 50%;
+}
+
+.descripcion h2 {
+    color: white;
+    font-size: 28px;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imagen {
+    width: 45%;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container-tres {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #fff;
+}
+
+.descripcion-tres{
+    width: 50%;
+}
+
+.descripcion-tres h2 {
+    color: #353535;
+    font-size: 28px;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*FOOTER*/
+.footer {
+    background: #111;
+    color: #ccc;
+    padding: 80px 8% 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 50px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.footer-col ul li a {
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ff7a00; /* color tipo naranja telecom */
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #ccc;
+    margin-right: 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff7a00;
+}
+
+.footer-bottom {
+    border-top: 1px solid #222;
+    margin-top: 60px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+@media screen and (max-width: 1000px){
+    .navLink{
+        display: none;
+    }
+
+    .link-wsp{
+        display: none;
+    }
+
+    .menu-bars-open{
+        display: block;
+        color: #fff;
+        padding: 1rem;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-dos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-tres {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .descripcion, .imagen {
+        width: 100%;
+    }
+
+    .imagen {
+        margin-top: 30px;
+    }
+}
