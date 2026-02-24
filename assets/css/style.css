@@ -452,7 +452,7 @@ html {
         transform: translateY(-100%);
         background: var(--bg-header);
         width: 100%;
-        height: calc(100vh - 80px);
+        height: 100vh;
         z-index: 99;
         transition: transform 0.4s ease; /* 🔥 animación suave */
     }
