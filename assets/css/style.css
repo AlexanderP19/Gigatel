@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     --bg-header: #29292a;
     --color-header: #fff;
     --font-family--:"Karla", "Helvetica Neue", helvetica, arial, sans-serif;
     --icon-wsp: #25D366;
+    --font-roboto: 'Roboto', sans-serif;
 }
 
 *{
@@ -66,15 +69,40 @@ aside{
 }
 
 /*ESTILOS PARA LINK DE NAVEGACION*/
+.navLink{
+    height: 100%;
+}
+
+.navLink nav{
+    height: 100%;
+}
+
 .navLink nav ul{
-    gap: 1rem;
     display: flex;
     list-style: none;
+    height: 100%;
+}
+
+.navLink nav ul li{
+    height: 100%;
 }
 
 .navLink nav ul li a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
     color: var(--color-header);
-    font-family: var(--font-family--);
+    font-family: var(--font-roboto);
+    transition: background 0.3s ease;
+}
+
+.navLink nav ul li a:hover{
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.navLink nav ul li a.active {
+    background: rgba(0, 0, 0, 0.65);
 }
 
 /*ESTILOS PARA EL ICONO DE WHATSAPP*/
@@ -128,128 +156,7 @@ main{
 .mensaje-bienvenida button:hover{
     background-color: #FF5A00;
 }
-
-
-/*SECCION DE PLANES
-.container-planes{
-    width: 100%;
-    margin: auto;
-    padding: 2rem 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    background: #fff;
-}
-
-.subtitulo-planes h1{
-    color: #E65100;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.planes{
-    width: 100%;
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.plan{
-    background: white;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-}
-
-.plan:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-}
-
-.plan img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.plan h2{
-    font-family: var(--font-family--);
-    padding: 1rem;
-    color: #333;
-}
-
-.plan p{
-    padding: .5rem 1rem;
-    color: #666;
-}
-
-
-.plan button{
-    margin: 1rem;
-    padding: .5rem 1rem;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.plan button:hover{
-    background-color: black;
-}
-
-.telefonia{
-    background: #fff;
-    height: 520px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    text-align: center;
-    overflow: hidden; 
-    transition: all 300ms ease;
-}
-
-.telefonia:hover{
-    transform: translateY(-10px);
-}
-
-.telefonia img{
-    width: 100%;
-    height: 50%;
-    text-align: center;
-    object-fit: cover;
-    overflow: hidden; 
-}
-
-.telefonia h2{
-    font-family: var(--font-family--);
-    padding: 1rem;
-    color: #333;
-}
-
-.telefonia p{
-    padding: .5rem 1rem;
-    color: #666;
-}
-
-.telefonia button{
-    margin: 1rem;
-    padding: .5rem 1rem;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.telefonia button:hover{
-    background-color: black;
-}*//* ============================= */
+/* ============================= */
 /* CONTENEDOR GENERAL */
 /* ============================= */
 
@@ -467,10 +374,11 @@ html {
         width: 100%;
         padding: 20px 20px;  /* espacio interno */
         color: var(--color-header);
+        font-family: var(--font-roboto);
     }
 
     .navLink-mobile nav ul li:hover{
-        background: #777;
+        background: rgb(32, 32, 32);
     }
 }
 
@@ -527,7 +435,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px;
+    padding: 70px;
     background-color: #fff;
 }
 
@@ -630,13 +538,31 @@ html {
 
 @media (max-width: 768px) {
     .container-dos {
+        padding: 30px;
         flex-direction: column;
         text-align: center;
     }
 
     .container-tres {
+        padding: 30px;
         flex-direction: column;
         text-align: center;
+    }
+
+    .descripcion-tres h2 {
+        font-size: 16px;
+        line-height: 1.8;  
+        word-break: normal; 
+    }
+
+    .descripcion-tres {
+        width: 100%;
+    }
+
+    .descripcion h2 {
+        font-size: 16px;
+        line-height: 1.8;    
+        word-break: normal; 
     }
 
     .descripcion, .imagen {
