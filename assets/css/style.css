@@ -573,3 +573,657 @@ html {
         margin-top: 30px;
     }
 }
+
+
+/*===================================*/
+/*ESTILOS DE PAGINA WEB PORQUE NOSOTROS*/
+/*===================================*/
+/* Sección Por Qué Nosotros */
+.porque-nosotros {
+    padding: 6rem 5rem;
+    background: rgba(0, 0, 0, 0.25); /* Fondo transparente oscuro */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    margin-top: 4rem;
+    box-shadow: 0 0 30px rgba(255, 122, 0, 0.2), 0 0 60px rgba(0, 180, 255, 0.1);
+}
+
+.porque-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-porque {
+    font-size: 3rem;
+    color: #ff7a00; /* Neón naranja */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px #ff7a00, 0 0 20px #ff5a00, 0 0 30px #00b4ff;
+}
+
+.subtitle-porque {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #fff;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Grid de beneficios */
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.beneficio-card {
+    background: linear-gradient(145deg, #1a1a1a, #222);
+    border: 1px solid #ff6b00;
+    border-radius: 15px;
+    padding: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #ff7a00, 0 0 40px #00b4ff;
+    border-color: #ff7a00;
+}
+
+.beneficio-card h3 {
+    font-size: 1.6rem;
+    color: #ff7a00;
+    margin-bottom: 1rem;
+}
+
+.beneficio-card p {
+    font-size: 1.1rem;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .porque-nosotros {
+        padding: 5rem 3rem;
+    }
+    .title-porque {
+        font-size: 2.5rem;
+    }
+    .subtitle-porque {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .porque-nosotros {
+        padding: 4rem 2rem;
+    }
+    .title-porque {
+        font-size: 2rem;
+    }
+    .subtitle-porque {
+        font-size: 1.2rem;
+    }
+    .beneficio-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-img {
+        width: 200px;
+    }
+    .title-porque {
+        font-size: 1.8rem;
+    }
+    .subtitle-porque {
+        font-size: 1rem;
+    }
+    .beneficios-grid {
+        gap: 1.5rem;
+    }
+}
+
+
+
+/*===================================*/
+/*ESTILOS DE PAGINA WEB NUESTRO SERVICIOS*/
+/*===================================*/
+/* Reset y tipografía */
+
+.hero-img {
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.85;
+    filter: brightness(0.8);
+}
+
+/* Main servicios padding y fondo */
+.main-servicios {
+    padding: 0 5rem 5rem 5rem;
+    background-color: #111; /* Fondo oscuro futurista */
+    min-height: 100vh;
+}
+
+/* Banner */
+/* Banner futurista */
+/* Banner futurista sin fondo gris */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 2rem; /* Espacioso */
+    margin-bottom: 4rem;
+    backdrop-filter: blur(10px); /* Efecto “holográfico” */
+    border-radius: 15px;
+}
+
+/* Contenedor del contenido */
+.banner-content {
+    max-width: 800px;
+}
+
+/* Título futurista */
+.title-banner {
+    font-size: 3rem;
+    color: #ff7a00; /* Naranja neón */
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 
+        0 0 5px #ff7a00, 
+        0 0 10px #ff5a00, 
+        0 0 20px #00b4ff; /* Sutil azul eléctrico */
+    margin-bottom: 1.5rem;
+}
+
+/* Subtítulo elegante */
+.subtitle-banner {
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 1.8;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .banner {
+        padding: 5rem 2rem;
+    }
+    .title-banner {
+        font-size: 2.5rem;
+    }
+    .subtitle-banner {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 4rem 1.5rem;
+    }
+    .title-banner {
+        font-size: 2rem;
+    }
+    .subtitle-banner {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        padding: 3rem 1rem;
+    }
+    .title-banner {
+        font-size: 1.8rem;
+    }
+    .subtitle-banner {
+        font-size: 1rem;
+    }
+}
+
+/* Introducción */
+.section-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-intro h2 {
+    font-size: 2.5rem;
+    color: #ff7a00;
+    text-shadow: 0 0 5px #ff7a00;
+    margin-bottom: 1rem;
+}
+
+.section-intro .parrafo {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #eee;
+}
+
+/* Servicios */
+.section-servicios {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-servicios h2 {
+    font-size: 2.5rem;
+    color: #ff7a00;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 8px #ff7a00;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.servicio-card {
+    background: linear-gradient(145deg, #1a1a1a, #222);
+    border: 1px solid #ff6b00;
+    border-radius: 15px;
+    padding: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.servicio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #ff7a00, 0 0 40px #ff5a00;
+    border-color: #ff7a00;
+}
+
+.servicio-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #ff7a00;
+}
+
+.servicio-card .parrafo {
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Soluciones Empresas */
+.section-empresas {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 3rem;
+    background: linear-gradient(135deg, #ff7a00, #ff6b00);
+    border-radius: 15px;
+}
+
+.section-empresas h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    margin-bottom: 1rem;
+}
+
+.section-empresas .parrafo {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .main-servicios {
+        padding: 0 3rem 3rem 3rem;
+    }
+
+    .banner .title-banner {
+        font-size: 2.5rem;
+    }
+
+    .section-intro h2,
+    .section-servicios h2,
+    .section-empresas h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-servicios {
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .banner .title-banner {
+        font-size: 2rem;
+    }
+
+    .section-intro h2,
+    .section-servicios h2,
+    .section-empresas h2 {
+        font-size: 1.8rem;
+    }
+
+    .servicio-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicios-grid {
+        gap: 1.5rem;
+    }
+
+    .hero-img {
+        width: 200px;
+    }
+}
+
+/*===================================*/
+/*ESTILOS DE PAGINA WEB QUIENES SOMOS*/
+/*===================================*/
+
+/* Sección Quiénes Somos */
+.quienes-somos {
+    padding: 6rem 5rem;
+    background: rgba(0,0,0,0.25); /* Fondo transparente oscuro */
+    backdrop-filter: blur(10px);   /* Efecto holográfico */
+    border-radius: 15px;
+    margin-top: 4rem;
+    box-shadow: 0 0 30px rgba(255,122,0,0.2), 0 0 60px rgba(0,180,255,0.1);
+}
+
+.quienes-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-quienes {
+    font-size: 3rem;
+    color: #ff7a00; /* Neón naranja */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px #ff7a00, 0 0 20px #ff5a00, 0 0 30px #00b4ff;
+}
+
+.subtitle-quienes {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #fff;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 5px rgba(255,255,255,0.2);
+}
+
+/* Grid de valores */
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.valor-card {
+    background: linear-gradient(145deg, #1a1a1a, #222);
+    border: 1px solid #ff6b00;
+    border-radius: 15px;
+    padding: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.valor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #ff7a00, 0 0 40px #00b4ff;
+    border-color: #ff7a00;
+}
+
+.valor-card h3 {
+    font-size: 1.6rem;
+    color: #ff7a00;
+    margin-bottom: 1rem;
+}
+
+.valor-card p {
+    font-size: 1.1rem;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .quienes-somos {
+        padding: 5rem 3rem;
+    }
+    .title-quienes {
+        font-size: 2.5rem;
+    }
+    .subtitle-quienes {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .quienes-somos {
+        padding: 4rem 2rem;
+    }
+    .title-quienes {
+        font-size: 2rem;
+    }
+    .subtitle-quienes {
+        font-size: 1.2rem;
+    }
+    .valor-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-img {
+        width: 200px;
+    }
+    .title-quienes {
+        font-size: 1.8rem;
+    }
+    .subtitle-quienes {
+        font-size: 1rem;
+    }
+    .valores-grid {
+        gap: 1.5rem;
+    }
+}
+
+/*===================================*/
+/*ESTILOS DE PAGINA WEB COMO LLEGAR*/
+/*===================================*/
+
+/* Sección Cómo Llegar */
+.como-llegar {
+    padding: 6rem 5rem;
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);   /* Efecto holográfico */
+    border-radius: 15px;
+    margin-top: 4rem;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(255,122,0,0.2), 0 0 60px rgba(0,180,255,0.1);
+}
+
+.como-content {
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+}
+
+.title-como {
+    font-size: 3rem;
+    color: #ff7a00; /* Neón naranja */
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px #ff7a00, 0 0 20px #ff5a00, 0 0 30px #00b4ff;
+}
+
+.subtitle-como {
+    font-size: 1.3rem;
+    color: #fff;
+    line-height: 1.8;
+    text-shadow: 0 0 5px rgba(255,255,255,0.2);
+}
+
+/* Mapa */
+.map-container {
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255,122,0,0.3);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .como-llegar {
+        padding: 5rem 3rem;
+    }
+    .title-como {
+        font-size: 2.5rem;
+    }
+    .subtitle-como {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .como-llegar {
+        padding: 4rem 2rem;
+    }
+    .title-como {
+        font-size: 2rem;
+    }
+    .subtitle-como {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-img {
+        width: 200px;
+    }
+    .title-como {
+        font-size: 1.8rem;
+    }
+    .subtitle-como {
+        font-size: 0.95rem;
+    }
+}
+
+/* Testimonios */
+.testimonios {
+    padding: 6rem 5rem;
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(12px);   
+    border-radius: 15px;
+    margin-top: 4rem;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(255,122,0,0.2), 0 0 60px rgba(0,180,255,0.1);
+}
+
+.title-testimonios {
+    font-size: 3rem;
+    color: #ff7a00;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 10px #ff7a00, 0 0 20px #ff5a00, 0 0 30px #00b4ff;
+}
+
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+/* Card */
+.testimonial-card {
+    background: linear-gradient(145deg, #1a1a1a, #222);
+    border: 1px solid #ff6b00;
+    border-radius: 25px;
+    padding: 2rem 1.5rem 3rem 1.5rem;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 0 25px #ff7a00, 0 0 50px #00b4ff;
+    border-color: #ff7a00;
+}
+
+/* Avatar circular */
+.avatar {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #ff7a00, #00b4ff);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 0 auto 1rem auto;
+    box-shadow: 0 0 10px #ff7a00, 0 0 15px #00b4ff;
+}
+
+/* Nombre debajo */
+.testimonial-card span {
+    display: block;
+    margin-top: 1rem;
+    color: #00b4ff;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .testimonios {
+        padding: 5rem 3rem;
+    }
+    .title-testimonios {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonios {
+        padding: 4rem 2rem;
+    }
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-testimonios {
+        font-size: 1.8rem;
+    }
+    .avatar {
+        width: 60px;
+        height: 60px;
+        font-size: 1.2rem;
+    }
+}
